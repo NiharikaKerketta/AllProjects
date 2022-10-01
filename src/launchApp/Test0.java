@@ -1,0 +1,21 @@
+package launchApp;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Test0 {
+
+	public static void main(String[] args) {
+		WebDriver driver = new ChromeDriver();
+		//Enter URL
+		driver.get("https://www.amazon.com/");
+		//get the title
+		System.out.println(driver.getTitle());
+		//get the Url
+		System.out.println(driver.getCurrentUrl());
+		//close the application
+		driver.close();
+		
+	}
+
+}
